@@ -84,7 +84,7 @@
 
       },
 
-      events : '/public/index.php/calendario/mostrar', 
+      events : '/odontologia/public/index.php/calendario/mostrar', 
 
       dateClick:function(info){
 
@@ -99,7 +99,7 @@
         var evento = info.event;
         console.log(evento.id);
 
-        axios.post('/public/index.php/calendario/editar/'+info.event.id).
+        axios.post('/odontologia/public/index.php/calendario/editar/'+info.event.id).
         then(
           (response) => 
           { 
@@ -127,7 +127,7 @@
         const datos = new FormData(formulario);
         
 
-        axios.post('/public/index.php/calendario/agregar', datos).
+        axios.post('/odontologia/public/index.php/calendario/agregar', datos).
         then(
           (response) => 
           { 
